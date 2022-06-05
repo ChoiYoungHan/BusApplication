@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/Text_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 날짜가 들어갈 영역입니다."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:layout_marginTop="100dp"
+                android:maxLines="1"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/Text_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 시간이 들어갈 영역입니다."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:textSize="25sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
+            >
+
+            <Button
+                android:id="@+id/Btn_Shuttle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="셔틀 버스"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/underline"
+                android:layout_marginTop="50dp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <Button
+                android:id="@+id/Btn_Tonghak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="통학 버스"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/underline"
+                android:layout_marginTop="25dp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <Button
+                android:id="@+id/Btn_Callben"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="콜벤 (탑승 모집)"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/underline"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+
+</LinearLayout>
