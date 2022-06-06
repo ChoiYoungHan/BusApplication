@@ -29,6 +29,12 @@
             android:name=".RegionalMap_Destination"
             android:exported="false" />
         <activity
+            android:name=".CallbenMain"
+            android:exported="false" />
+        <activity
+            android:name=".CallbenNumber"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
