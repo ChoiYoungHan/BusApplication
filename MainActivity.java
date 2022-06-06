@@ -18,7 +18,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
     // MainActivity에서 사용할 변수 선언
     private TextView Text_Date, Text_Time;
-    private Button Btn_Tonghak;
+    private Button Btn_Tonghak, Btn_Callben;
 
     // 팝업 화면
     Dialog Select_Popup;
@@ -99,6 +99,40 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Intent intent = new Intent(MainActivity.this, Destination.class); // 현재 액티비티(MainAcitivity)에서 목적지 액티비티(Destination)로 연결
                         startActivity(intent); // 목적지 액티비티(Destination)를 열어준다.
+                        Select_Popup.cancel();
+                    }
+                });
+            }
+        });
+        
+        // 콜벤(탑승 모집) 버튼 클릭 시
+        Btn_Callben.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Select_Popup.show(); // 팝업 화면을 보여주겠다.
+
+                Btn_FirstPrintArea.setText("콜벤 전화번호"); // 첫번째 버튼의 텍스트를 "콜벤 전화번호"로 함
+                Btn_SecondPrintArea.setText("합승 모집"); // 두번째 버튼의 텍스트를 "합승 모집"으로 함
+                Btn_ThirdPrintArea.setVisibility(View.GONE); // 세번째 버튼 비활성화
+                Btn_FourthPrintArea.setVisibility(View.GONE); // 네번째 버튼 비활성화
+                Btn_FifthPrintArea.setVisibility(View.GONE); // 다섯번째 버튼 비활성화
+
+                // 첫번째 버튼(콜벤 전화번호) 클릭 시
+                Btn_FirstPrintArea.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this,CallbenNumber.class); // 현재 액티비티(MainActivity)에서 콜벤 전화번호 액티비티(CallbenNumber)로 연결
+                        startActivity(intent);
+                        Select_Popup.cancel();
+                    }
+                });
+
+                // 두번째 버튼(합승 모집) 클릭 시
+                Btn_SecondPrintArea.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, CallbenMain.class);
+                        startActivity(intent);
                         Select_Popup.cancel();
                     }
                 });
