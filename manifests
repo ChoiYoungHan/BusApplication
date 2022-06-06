@@ -26,6 +26,9 @@
             android:name=".RegionalPopup"
             android:exported="false" />
         <activity
+            android:name=".RegionalMap_Destination"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
