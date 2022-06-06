@@ -1,4 +1,4 @@
-package com.example.destination;
+package com.example.project0531;
 
 import androidx.appcompat.app.AppCompatActivity;
 
