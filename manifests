@@ -32,8 +32,18 @@
             android:name=".CallbenMain"
             android:exported="false" />
         <activity
+            android:name=".Find_IDPW"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".CallbenNumber"
             android:exported="false" />
+         <activity
+            android:name=".PostList"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
