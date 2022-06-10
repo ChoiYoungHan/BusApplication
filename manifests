@@ -32,6 +32,19 @@
             android:name=".CallbenMain"
             android:exported="false" />
         <activity
+            android:name=".ChangeUserPasswordPopup"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeUserInfoPopup"
+            android:exported="false" />
+        <activity
+            android:name=".PostUpload"
+            android:exported="false" />
+        <activity
+            android:name=".PostScreen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
             android:name=".Find_IDPW"
             android:exported="false" />
         <activity
